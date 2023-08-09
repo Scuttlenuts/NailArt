@@ -1,0 +1,1423 @@
+/*General Elements*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    background-color: #FDFDFD;
+}
+
+.dark {
+    background-color: #40004C;
+    color: #FDFDFD;
+}
+
+.light {
+    background-color: #FDFDFD;
+    color: #40004C;
+}
+
+.main-butt {
+    background-color: #FF0078;
+    color: #FDFDFD;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    height: 60px;
+    width: 577px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    box-shadow: 0 7px 15px black;
+}
+
+.main-butt:hover {
+    background-color: #FDFDFD;
+    color: #FF0078;
+}
+
+span {
+    color: #FF0078;
+}
+
+/*Intro Page*/
+.intro {
+    height: 735px;
+}
+
+.start {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.start .start-left {
+    width: 580px;
+    text-align: center;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.start h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+.start .videoarea {
+    width: 577px;
+    height: 324px;
+    background-color: #a8a8a8;
+    border: 5px solid black;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+
+
+/*Courses*/
+.techs {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.techs h1 {
+    text-transform: uppercase;
+    color: #FF0078;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.techs h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.courses-list {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+}
+
+.courses-list .courses {
+    width: 1000vw;
+    height: 100%;
+}
+
+.courses-list .course {
+    width: 266px;
+    height: 100%;
+    min-height: 246px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0px 0px 7px rgb(53, 53, 53);
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.courses-list .course-area {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #40004C;
+    padding: 30px;
+}
+
+.course-area .course-img {
+    background-color: #40004C;
+    width: 132px;
+    height: 132px;
+    border: 3px solid black;
+    border-radius: 66px;
+    margin-bottom: 10px;
+}
+
+/*Who*/
+
+.who-for {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.who .who-left {
+    width: 580px;
+    align-items: center;
+    justify-content: left;
+}
+
+.who-tit {
+    text-transform: uppercase;
+    font-size: 54px;
+    font-weight: 900;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.who img {
+    width: 32px;
+    margin-right: 20px;
+}
+
+.who-list .list-entry {
+    font-size: 18px;
+    margin: 10px 10px 30px 10px;
+    display: flex;
+
+}
+
+/*Why*/
+.why {
+    background-image: linear-gradient(to right, #FFEFF8, #FFEFF8, #BEBAC4);
+}
+
+.why-tho {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.why-left {
+    width: 580px;
+    align-items: center;
+    justify-content: left;
+}
+
+.why-tit {
+    color: #FF0078;
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.why .why-desc {
+    color:#666666;
+    font-size: 16px;
+}
+
+/*Modules*/
+.modules {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modules h1 {
+    text-transform: uppercase;
+    color: #FF0078;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.modules h5 {
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.mode-tit {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.modules-list {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modules-list .modes {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mode-img {
+    width: 61px;
+    height: 61px;
+    background-color: white;
+    border: 2px solid #40004C;
+    border-radius: 30px;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.modules-list .mode {
+    width: 365px;
+    height: 209px;
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0px 0px 7px rgb(53, 53, 53);
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 15px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.modules-list .mode-tit {
+    text-transform: uppercase;
+}
+
+.modules-list .mode-desc {
+    color: #666666;
+}
+
+.modules .main-butt {
+    width: 377px;
+    margin-bottom: 30px;
+}
+
+/*Videos*/
+.vids {
+    background-image: linear-gradient(to left, #FFEFF8, #FFEFF8, #BEBAC4);
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.vids-tit {
+    text-align: center;
+    margin-bottom: 60px;
+    padding-top: 5px;
+}
+
+.vids-tit h1 {
+    color: #FF0078;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.vids-tit h5 {
+    color: #40004C;
+    font-size: 18px;
+}
+
+.videos-list {
+    max-width: 1140px;
+    align-items: center;
+    margin: auto;
+    display: flex;
+}
+
+.videos {
+    width: 1000vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.video {
+    width: 360px;
+    height: 213px;
+    background-color: #a8a8a8;
+    border: 3px solid #40004C;
+    border-radius: 20px;
+    display: inline-flex;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+/*Price*/
+.price {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+.price-desc {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price-desc1 {
+    width: 400px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.price-desc2 {
+    width: 868px;
+    font-size: 18px;
+}
+
+.price-total h1 {
+    font-size: 100px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.price-total h5 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.price .main-butt {
+    width: 450px;
+    height: 69px;
+    margin-bottom: 40px;
+}
+
+.price-limit {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 90px;
+}
+
+.price-warranty {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    margin-bottom: 40px;
+}
+
+.warranty-desc {
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 80px;
+    flex: 1;
+    width: 843px;
+}
+
+.warranty-medal {
+    width: 236px;
+    height: 236px;
+    background-color: #F9FFFF;
+    border: 27px solid #FF0078;
+    border-radius: 118px;
+}
+
+/*Bonus*/
+.bonus-bod {
+    margin: auto;
+    max-width: 1140px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.bonus-tit {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FF0078;
+    font-weight: 900;
+    text-align: center;
+    width: 690px;
+    margin-top: 60px;
+}
+
+.bonus-book {
+    background-color: white;
+    box-shadow: 0px 0px 7px rgb(53, 53, 53);
+    border-radius: 10px;
+    width: auto;
+    height: 242px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.bonus-book-tit {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.bonus-stuff {
+    flex: 1;
+}
+
+.bonus-book-desc {
+    color: #666666;
+    font-weight: 500;
+}
+
+.book {
+    background-color: #0087D2;
+    width: 141px;
+    height: 194px;
+}
+
+.first .book {
+    background-color: #73C934;
+}
+
+.third .book {
+    background-color: #40004C;
+}
+
+/*Classes*/
+
+.classes-bod {
+    margin: auto;
+    max-width: 1140px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.classes-tit {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 90px;
+    width: 800px;
+}
+
+.classes-options {
+    margin-top: 40px;
+    display: flex;
+}
+
+.class {
+    width: 369px;
+    height: 208px;
+    margin-right: 25px;
+    box-shadow: 0px 0px 7px rgb(53, 53, 53);
+    border-radius: 12px;
+    padding: 5px;
+}
+
+.class-tit {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.class-desc {
+    font-weight: 500;
+}
+
+.two .class-desc {
+    color: #666666;
+}
+
+.class-logo {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #40004C;
+    margin: 20px auto;
+    border-radius: 30px;
+}
+
+.one {
+    background-color: #40004C;
+    color: #FDFDFD;
+}
+
+.two {
+    background-color: white;
+}
+
+.three {
+    background-color: #FF0078;
+    color: #FDFDFD;
+}
+
+.one .class-logo,
+.three .class-logo {
+    border-color: #FDFDFD;
+}
+
+.classes .main-butt {
+    width: 380px;
+}
+
+/*Teacher*/
+.teacher {
+    background-image: linear-gradient(to right, #FFEFF8, #FFEFF8, #BEBAC4);
+    height: 100%;
+}
+
+.teach-bod {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.teach-stuff {
+    width: 580px;
+    margin-bottom: 90px;
+}
+
+.teach-tit {
+    color: #FF0078;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 900;
+    width: 500px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    line-height: 0.9;
+}
+
+.teach-name {
+    font-family: 'Charmonman', 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    color: #FF0078;
+
+}
+
+.teach-desc {
+    font-size: 17px;
+    color: #666666;
+}
+
+
+/*FAQ*/
+.faq-bod {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-tit {
+    font-size: 55px;
+    font-weight: 900;
+    color: #FF0078;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.faq-desc {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.faq-ques {
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: #40004C;
+    color: #FDFDFD;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.faq-ques:hover {
+    background-color: #FF0078;
+    cursor: pointer;
+}
+
+.faq-arrow {
+    width: 5px;
+    height: 5px;
+    border: 5px solid;
+    border-color: transparent transparent transparent #FDFDFD;
+    margin-right: 5px;
+}
+
+
+
+/*Footer*/
+.foot-bod {
+    margin: auto;
+    max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-desc {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.foot .main-butt {
+    width: 380px;
+    margin-top: 50px;
+}
+
+.logo {
+    border: 3px solid #FDFDFD;
+    width: 215px;
+    height: 92px;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+.logo-tit {
+    font-family: 'Charmonman', 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.logo-desc {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+
+
+/*Responsiveness (TABLET)*/
+@media (min-width: 426px) and (max-width: 768px) {
+
+    .main-butt {
+        font-size: 18px;
+    }
+
+    /*Intro*/
+    .start .start-left {
+        width: 380px;
+        margin-left: 40px;
+    }
+
+    .start .videoarea {
+        width: 367px;
+        height: 196px;
+    }
+
+    .start .main-butt {
+        width: 367px;
+    }
+
+
+    /*Techs*/
+    .techs h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .techs h5 {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .courses-list .course {
+        width: 168px;
+        height: 100%;
+        min-height: 206px;
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .courses-list .course-area {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .course-area .course-img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+
+    /*Why*/
+    .who .who-left {
+        width: 330px;
+        margin-left: 40px;
+    }
+    
+    .who-tit {
+        font-size: 40px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+    
+    .who img {
+        width: 32px;
+        margin-right: 20px;
+    }
+    
+    .who-list .list-entry {
+        font-size: 16px;
+        margin: 10px 10px 30px 10px;
+        align-items: center;
+    }
+
+    .who .main-butt {
+        width: 330px;
+    }
+
+
+    /*Why*/
+    .why-left {
+        width: 360px;
+        margin-left: 40px;
+    }
+    
+    .why-tit {
+        font-size: 45px;
+        width: 340px;
+    }
+    
+    .why .why-desc {
+        font-size: 16px;
+    }
+
+
+    /*Modules*/
+    .modules h1 {
+        font-size: 50px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .modules h5 {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .mode-tit {
+        font-weight: 900;
+    }
+
+    .mode-img {
+        width: 61px;
+        height: 61px;
+    }
+
+    .modules-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modes {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .modes .mode {
+        width: 190px;
+        height: 230px;
+        align-items: center;
+        margin: 7px;
+        border-radius: 8px;
+    }
+
+
+
+    /*Videos*/
+    .vids {
+        height: 600px;
+    }
+
+    .videos-list {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    .videos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .video {
+        width: 210px;
+        height: 125px;
+        display: inline-flex;
+        margin-right: 10px;
+        margin-bottom: 40px;
+    }
+
+
+    /*Price*/
+    
+    .price-desc {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .price-desc1 {
+        width: 400px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    
+    .price-desc2 {
+        width: 690px;
+        font-size: 16px;
+    }
+    
+    .price .main-butt {
+        width: 360px;
+        height: 52px;
+        margin-bottom: 40px;
+    }
+    
+    .price-warranty {
+        width: 630px;
+    }
+    
+    .warranty-desc {
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 40px;
+        flex: 1;
+        width: 843px;
+    }
+    
+    .warranty-medal {
+        width: 136px;
+        height: 136px;
+    }
+
+
+    
+    /*Bonus*/
+    .bonus-book {
+        height: 160px;
+        margin: 30px;
+    }
+    
+    .bonus-book-tit {
+        font-size: 16px;
+    }
+    
+    .bonus-book-desc {
+        width: 400px;
+    }
+    
+    .book {
+        width: 101px;
+        height: 124px;
+    }
+
+    .second .book {
+        margin-left: 70px;
+    }
+
+    .third .book {
+        margin-left: 48px;
+    }
+
+
+    /*Classes*/
+    .classes-tit {
+        width: 700px;
+        font-size: 28px;
+    }
+    
+    .class {
+        width: 220px;
+        height: 280px;
+        padding: 7px;
+    }
+
+    /*Teacher*/
+    .teach-stuff {
+        width: 400px;
+        margin-bottom: 90px;
+        margin-left: 40px;
+    }
+    
+    .teach-tit {
+        width: 420px;
+        margin-bottom: 0;
+    }
+    
+    .teach-name {
+        font-size: 55px;
+    
+    }
+    
+    .teach-desc {
+        font-size: 20px;
+    }
+
+
+
+    /*FAQ*/
+    .faq-list {
+        justify-content: center;
+        margin-bottom: 60px;
+        margin: 10px 40px 50px;
+    }
+    
+    .faq-ques {
+        font-size: 20px;
+    }
+    
+
+
+    /*Footer*/
+    .foot-desc {
+        margin: 70px 40px 0;
+        text-align: center;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+}
+
+
+/*Responsiveness (PHONE)*/
+@media (max-width: 425px) {
+     /*Intro*/
+    .start {
+        align-items: center;
+        justify-content: center;
+    }
+
+     .start .start-left {
+        width: 340px;
+    }
+
+    .start h1 {
+        width: 340px;
+    }
+
+    .start .videoarea {
+        width: 340px;
+        height: 182px;
+    }
+
+    .start .main-butt {
+        width: 340px;
+    }
+
+
+
+    /*Techs*/
+
+    .techs h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .techs h5 {
+        font-size: 18px;
+    }
+
+    .courses-list {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .courses-list .course {
+        width: 180px;
+        height: auto;
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        margin: 5px;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .course-area .course-img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    /*Who*/
+    .who .who-left {
+        width: 340px;
+        margin: auto;
+    }
+    
+    .who-tit {
+        font-size: 30px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        width: 350px;
+        
+    }
+    
+    .who img {
+        width: 30px;
+        margin-right: 15px;
+    }
+
+    .who-list {
+        width: 360px;
+    }
+    
+    .who-list .list-entry {
+        font-size: 18px;
+        margin: 10px auto 30px;
+        align-items: center;
+    }
+
+    .who .main-butt {
+        width: 340px;
+    }
+
+
+
+    /*Why*/
+    .why-left {
+        width: 360px;
+        margin: auto;
+    }
+    
+    .why-tit {
+        font-size: 37px;
+        width: 360px;
+    }
+    
+    .why .why-desc {
+        font-size: 17px;
+        margin-bottom: 50px;
+    }
+
+
+
+    /*Modules*/
+    .modules {
+        width: 360px;
+        margin: auto;
+    }
+
+    .modules h1 {
+        font-size: 40px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .modules h5 {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    .mode-tit {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .mode-img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .modules-list {
+        margin-left: 10px;
+    }
+
+    .modes .mode {
+        width: 360px;
+        height: 200px;
+    }
+
+    .modules .main-butt {
+        width: 360px;
+    }
+
+
+
+    /*Videos*/
+    
+    .vids-tit h1 {
+        font-size: 40px;
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+    
+    .vids-tit h5 {
+        font-size: 18px;
+    }
+
+    .videos-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+     }
+     
+     .videos {
+        margin-left: 15px;
+     }
+
+     .video {
+        margin-bottom: 20px;
+     }
+
+
+
+     /*Price*/
+     .price-desc {
+        margin: auto;
+        width: 360px;
+    }
+    
+    .price-desc1 {
+        font-size: 19px;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .price-desc2 {
+        width: 360px;
+        font-size: 18px;
+    }
+    
+    .price .main-butt {
+        width: 350px;
+        height: 62px;
+    }
+    
+    .price-warranty {
+        width: 360px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .warranty-desc {
+        font-size: 18px;
+        width: 360px;
+        margin: auto;
+    }
+    
+    .warranty-medal {
+        width: 136px;
+        height: 136px;
+        margin-bottom: 25px;
+    }
+
+
+
+    /*Bonus*/
+    .bonus-bod {
+        width: 360px;
+    }
+
+    .bonus-tit {
+        width: 360px;
+        font-size: 24px;
+    }
+
+    .bonus-list {
+        width: 360px;
+    }
+
+    .bonus-book {
+        height: auto;
+        width: 360px;
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+    
+    .bonus-book-tit {
+        font-size: 16px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .bonus-book-desc {
+        width: 350px;
+        margin: 10px auto;
+        text-align: center;
+    }
+    
+    .book {
+        width: 101px;
+        height: 124px;
+        margin-bottom: 10px;
+    }
+
+
+
+    /*Classes*/
+    .classes {
+        margin: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .classes-tit {
+        width: 300px;
+        font-size: 24px;
+        margin-top: 30px;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    .classes-tit span {
+        font-size: 30px;
+    }
+
+    .classes-options {
+        flex-direction: column;
+        width: 360px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .class {
+        width: 360px;
+        height: auto;
+        padding: 10px;
+        margin: auto auto 20px;
+    }
+
+    .class-desc {
+        margin-bottom: 20px;
+    }
+
+    .class .main-butt {
+        width: 360px;
+        margin: auto;
+    }
+
+
+
+    /*Teacher*/
+    .teacher {
+        background-image: linear-gradient(to bottom, #FFEFF8, #FFEFF8, #BEBAC4);
+    }
+
+    .teach-stuff {
+        width: 360px;
+        margin: auto;
+        margin-bottom: 90px;
+    }
+    
+    .teach-tit {
+        width: 360px;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    .teach-name {
+        font-size: 40px;
+        text-align: center;
+    
+    }
+    
+    .teach-desc {
+        font-size: 22px;
+    }
+
+
+
+    /*FAQ*/
+    .faq-tit {
+        font-size: 45px;
+        margin: 10px auto 10px;
+    }
+
+    .faq-list {
+        width: 360px;
+        margin: 10px auto 50px;
+    }
+    
+    .faq-ques {
+        font-size: 18px;
+    }
+
+
+
+    /*Footer*/
+    .foot-desc {
+        width: 370px;
+        margin: 30px auto 0;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .foot-bod .main-butt {
+        width: 360px;
+        height: 70px;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
