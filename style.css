@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: red solid 1px;
 }
 
 body {
@@ -50,9 +51,6 @@ span {
 }
 
 /*Intro Page*/
-.intro {
-    height: 735px;
-}
 
 .start {
     max-width: 1140px;
@@ -65,7 +63,6 @@ span {
     width: 580px;
     text-align: center;
     align-items: center;
-    padding-right: 15px;
 }
 
 .start h1 {
@@ -105,6 +102,7 @@ span {
 .techs h5 {
     text-transform: uppercase;
     font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .courses-list {
@@ -122,7 +120,6 @@ span {
 
 .courses-list .course {
     width: 266px;
-    height: 100%;
     min-height: 246px;
     display: inline-block;
     background-color: white;
@@ -219,6 +216,7 @@ span {
 .why .why-desc {
     color:#666666;
     font-size: 16px;
+    margin-bottom: 30px;
 }
 
 /*Modules*/
@@ -240,6 +238,7 @@ span {
 .modules h5 {
     text-transform: uppercase;
     font-size: 19px;
+    margin-bottom: 20px;
 }
 
 .mode-tit {
@@ -394,7 +393,7 @@ span {
 .price-total h5 {
     text-transform: uppercase;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .price .main-butt {
@@ -575,7 +574,6 @@ span {
 /*Teacher*/
 .teacher {
     background-image: linear-gradient(to right, #FFEFF8, #FFEFF8, #BEBAC4);
-    height: 100%;
 }
 
 .teach-bod {
@@ -1040,8 +1038,8 @@ span {
 }
 
 
-/*Responsiveness (PHONE)*/
-@media (max-width: 425px) {
+/*Responsiveness (PHONE L)*/
+@media (min-width: 376px) and (max-width: 425px) {
      /*Intro*/
     .start {
         align-items: center;
@@ -1137,6 +1135,10 @@ span {
 
 
     /*Why*/
+    .why {
+        background-image: linear-gradient(to bottom, #FFEFF8, #FFEFF8, #BEBAC4);
+    }
+
     .why-left {
         width: 360px;
         margin: auto;
@@ -1419,5 +1421,744 @@ span {
     .copyright {
         text-align: center;
         margin-bottom: 10px;
+    }
+}
+
+
+
+/*Responsiveness (PHONE M)*/
+@media (min-width: 321px) and (max-width: 375px) {
+    /*Intro*/
+    .start .start-left {
+        width: 375px;
+        padding: 0 5px;
+    }
+
+    .start-left h1 {
+        font-size: 30px;
+    }
+
+    .start-left .videoarea {
+        width: 330px;
+        height: 186px;
+        margin: 30px auto;
+    }
+
+    .start-left .main-butt {
+        width: 330px;
+        font-size: 17px;
+    }
+
+
+
+    /*Techs*/
+    .techs h1 {
+        font-size: 25px;
+        margin-bottom: 14px;
+    }
+
+    .techs h5 {
+        margin-bottom: 20px;
+        margin-left: 13px;
+        width: 350px;
+        text-align: center;
+
+    }
+
+    .courses-list .courses {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .courses-list .course {
+        width: 136px;
+        min-height: 180px;
+        margin: 10px;
+    }
+
+    .courses-list .course-area {
+        padding: 0;
+        font-size: 11px;
+    }
+
+    .course-area .course-img {
+        width: 90px;
+        height: 90px;
+    }
+
+
+
+    /*Who*/
+    .who .who-left {
+        width: 375px;
+    }
+
+    .who-tit {
+        width: 295px;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .who-list {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .who-list .list-entry {
+        font-size: 16px;
+    }
+
+    .list-check {
+        margin: auto;
+    }
+
+    .who .main-butt {
+        width: 330px;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+
+
+
+    /*Why*/
+    .why {
+        background-image: linear-gradient(to bottom, #FFEFF8, #FFEFF8, #BEBAC4);
+    }
+
+    .why-left {
+        width: 340px;
+        margin: 20px;
+    }
+
+    .why-tit {
+        font-size: 33px;
+        margin-top: 0;
+    }
+
+    .why .why-desc {
+        font-size: 14px;
+    }
+
+
+
+    /*Modules*/
+
+    .modules h1 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-size: 40px;
+    }
+
+    .modules h5 {
+        font-size: 14px;
+        width: 330px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .modules-list .modes {
+        margin: auto;
+    }
+
+    .modules-list .mode {
+        width: 330px;
+        height: 186px;
+        margin: 0 auto 30px;
+    }
+
+    .mode-img {
+        margin: 10px auto;
+    }
+
+    .mode-tit {
+        font-size: 17px;
+    }
+
+    .modules .main-butt {
+        width: 330px;
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+
+
+    /*Videos*/
+    .vids-tit {
+        margin-bottom: 30px;
+    }
+
+    .vids-tit h1 {
+        font-size: 35px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .vids-tit h5 {
+        font-size: 16px;
+    }
+
+    .videos {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .video {
+        width: 330px;
+        height: 186px;
+        margin: 15px 5px;
+    }
+
+
+
+    /*Prices*/
+    .price-desc1 {
+        width: 375px;
+        margin: 30px auto 15px;
+        font-size: 17px;
+    }
+
+    .price-desc2 {
+        width: 340px;
+        font-size: 16px;
+    }
+
+    .price-total h1 {
+        font-size: 80px;
+    }
+
+    .price-total h5 {
+        font-size: 25px;
+    }
+
+    .price .main-butt {
+        width: 290px;
+        height: 65px;
+        font-size: 16px;
+    }
+
+    .price-limit {
+        margin-bottom: 40px;
+    }
+
+    .price-warranty {
+        width: 330px;
+        flex-direction: column;
+    }
+
+    .warranty-medal {
+        margin-bottom: 30px;
+        width: 196px;
+        height: 196px;
+    }
+
+    .warranty-desc {
+        width: 330px;
+        margin: auto;
+        text-align: center;
+    }
+
+
+
+    /*Bonus*/
+    .bonus-tit {
+        width: 330px;
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .bonus-book {
+        flex-direction: column-reverse;
+        height: auto;
+        width: 330px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .book {
+        margin: 20px auto;
+    }
+
+
+
+    /*Classes*/
+    .classes-tit {
+        width: 330px;
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    .classes-tit span {
+        font-size: 35px;
+    }
+
+    .classes-options {
+        flex-direction: column;
+        margin: 40px auto 0;
+    }
+
+    .class {
+        width: 330px;
+        height: 196px;
+        margin: 10px auto;
+    }
+
+    .class-desc {
+        font-size: 14px;
+    }
+
+    .classes .main-butt {
+        width: 330px;
+        font-size: 16px;
+    }
+
+
+
+    /*Teacher*/
+    .teacher {
+        margin: auto;
+        align-items: center;
+    }
+
+    .teach-tit {
+        width: 375px;
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .teach-name {
+        font-size: 40px;
+        width: 375px;
+        text-align: center;
+    }
+
+    .teach-stuff {
+        width: 375px;
+    }
+
+    .teach-desc {
+        width: 330px;
+        font-size: 15px;
+        margin: auto;
+    }
+
+
+
+    /*FAQ*/
+    .faq-tit {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .faq-list {
+        margin: auto;
+    }
+
+    .faq-ques {
+        width: 330px;
+    }
+
+
+
+    /*Footer*/
+    .foot-desc {
+        width: 330px;
+        margin-top: 40px;
+    }
+
+    .foot .main-butt {
+        width: 330px;
+    }
+
+    .copyright {
+        width: 330px;
+        font-size: 12px;
+        text-align: center;
+        margin: 30px auto;
+    }
+}
+
+
+
+/*Responsiveness (PHONE S)*/
+@media (max-width: 320px) {
+    /*Intro*/
+    .start-left {
+        width: 320px;
+        margin: auto;
+        align-items: center;
+        
+    }
+
+    .start h1 {
+        width: 320px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .start .videoarea {
+        width: 270px;
+        height: 152px;
+        margin: auto;
+    }
+
+    .main-butt {
+        width: 280px;
+    }
+
+
+
+    /*Techs*/
+    .techs h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .techs h5 {
+        font-size: 13px;
+    }
+
+    .courses-list .courses {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .courses-list .course {
+        width: 146px;
+        min-height: 199px;
+        margin: 10px auto;
+    }
+
+    .course-area .course-img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .courses-list .course-area {
+        padding: 0;
+        font-size: 14px;
+    }
+
+
+
+    /*Who*/
+
+    .who .who-left {
+        width: 320px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .who-tit {
+        width: 260px;
+        font-size: 28px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .who-list .list-entry {
+        font-size: 14px;
+    }
+
+    .list-check {
+        margin: auto;
+    }
+
+    .who img {
+        margin-right: 10px;
+    }
+
+    .who .main-butt {
+        margin-left: 30px;
+        margin-top: 0;
+        font-size: 16px;
+        width: 260px;
+        height: 50px;
+    }
+
+
+
+    /*Why*/
+    .why {
+        background-image: linear-gradient(to bottom, #FFEFF8, #FFEFF8, #BEBAC4);
+    }
+
+    .why-left {
+        width: 320px;
+        margin: auto;
+    }
+
+    .why-tit {
+        width: 300px;
+        font-size: 30px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .why .why-desc {
+        font-size: 14px;
+        margin: 25px 15px 50px;
+    }
+
+
+
+    /*Modules*/
+    .modules h1 {
+        margin-top: 18px;
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+
+    .modules h5 {
+        font-size: 14px;
+    }
+
+    .modules-list .modes {
+        margin: auto;
+    }
+
+    .modules-list .mode {
+        width: 290px;
+        height: 177px;
+        margin: 0 auto 20px;
+    }
+
+    .modules-list .mode-tit {
+        font-size: 17px;
+    }
+
+    .modules-list .mode-desc {
+        font-size: 12px;
+        margin: auto;
+    }
+
+    .modules .main-butt {
+        width: 290px;
+        font-size: 14px;
+    }
+
+
+
+    /*Videos*/
+    .vids-tit {
+        margin-bottom: 40px;
+    }
+
+    .vids-tit h1 {
+        width: 320px;
+        font-size: 35px;
+        margin-top: 15px;
+    }
+
+    .vids-tit h5 {
+        font-size: 16px;
+        margin: 5px 10px;
+    }
+
+    .videos {
+        width: 320px;
+        margin: auto auto 30px;
+    }
+
+    .video {
+        width: 290px;
+        height: 177px;
+        margin: 10px auto;
+    }
+
+
+
+    /*Price*/
+    .price-desc {
+        margin: auto;
+    }
+
+    .price-desc1 {
+        width: 320px;
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+    .price-desc2 {
+        width: 290px;
+        font-size: 14px;
+    }
+
+    .price-total h1 {
+        font-size: 80px;
+    }
+
+    .price-total h5 {
+        font-size: 22px;
+    }
+
+    .price .main-butt {
+        width: 290px;
+        font-size: 18px;
+    }
+
+    .price-limit {
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .price-warranty {
+        flex-direction: column;
+        width: 290px;
+    }
+
+    .warranty-medal {
+        width: 210px;
+        height: 210px;
+    }
+
+    .warranty-desc {
+        width: 290px;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
+    /*Bonus*/
+    .bonus-tit {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 320px;
+        font-size: 22px;
+    }
+
+    .bonus-list {
+        width: 320px;
+        margin: auto;
+    }
+
+    .bonus-book {
+        flex-direction: column-reverse;
+        width: auto;
+        height: auto;
+        padding: 20px;
+        margin: 0 20px 30px;
+        text-align: center;
+    }
+
+    .bonus-book-desc {
+        font-size: 14px;
+    }
+
+    .book {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*Classes*/
+    .classes-tit {
+        width: 320px;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+
+    .classes-tit span {
+        font-size: 32px;
+    }
+
+    .classes-options {
+        flex-direction: column;
+        width: 320px;
+    }
+
+    .class {
+        width: 290px;
+        height: 177px;
+        margin: auto auto 25px;
+    }
+
+    .class-logo {
+        margin: 10px auto;
+    }
+
+    .class-desc {
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .classes .main-butt {
+        width: 290px;
+        font-size: 14px;
+    }
+
+
+
+    /*Teacher*/
+    .teach-stuff {
+        width: 320px;
+    }
+
+    .teach-tit {
+        width: 320px;
+        font-size: 30px;
+        text-align: center;
+        margin: 30px auto 10px;
+    }
+
+    .teach-name {
+        width: 320px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .teach-desc {
+        width: 290px;
+        margin: 10px auto;
+        font-size: 14px;
+    }
+
+
+
+    /*FAQ*/ 
+    .faq-tit {
+        margin: 10px auto;
+        font-size: 50px;
+    }
+
+    .faq-desc {
+        font-size: 16px;
+    }
+
+    .faq-list {
+        margin: auto;
+    }
+
+    .faq-ques {
+        width: 290px;
+        font-size: 14px;
+    }
+
+
+
+    /*Footer*/
+    .foot-desc {
+        font-size: 16px;
+        margin: 20px auto;
+        width: 290px;
+    }
+
+    .foot .main-butt {
+        width: 290px;
+        margin: 20px auto 40px;
+        font-size: 14px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+        width: 290px;
+        margin: 50px auto 5px;
     }
 }
