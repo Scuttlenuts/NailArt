@@ -4,13 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: red solid 1px;
 }
 
 body {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     overflow-x: hidden;
     background-color: #FDFDFD;
+    width: auto;
 }
 
 .dark {
@@ -33,7 +33,7 @@ body {
     display: inline-flex;
     justify-content: center;
     height: 60px;
-    width: 577px;
+    width: 100%;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -53,32 +53,31 @@ span {
 /*Intro Page*/
 
 .start {
-    max-width: 1140px;
+    max-width: 75%;
     margin: auto;
     display: flex;
     align-items: center;
 }
 
-.start .start-left {
-    width: 580px;
+.start-left {
+    width: 63%;
     text-align: center;
     align-items: center;
 }
 
 .start h1 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 900;
     margin-top: 30px;
 }
 
-.start .videoarea {
-    width: 577px;
-    height: 324px;
+.videoarea {
+    aspect-ratio: 2 / 1.2;
     background-color: #a8a8a8;
     border: 5px solid black;
     border-radius: 15px;
-    margin-top: 30px;
+    margin: 30px auto 0;
 }
 
 
@@ -93,60 +92,62 @@ span {
 .techs h1 {
     text-transform: uppercase;
     color: #FF0078;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 900;
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin: 60px auto 10px;
+    width: 63%;
 }
 
 .techs h5 {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
 .courses-list {
-    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1140px;
+    margin: auto;
 }
 
-.courses-list .courses {
-    width: 1000vw;
-    height: 100%;
+.courses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 85%;
 }
 
-.courses-list .course {
-    width: 266px;
-    min-height: 246px;
+.course {
+    width: 190px;
+    height: 190px;
     display: inline-block;
     background-color: white;
     box-shadow: 0px 0px 7px rgb(53, 53, 53);
     border-radius: 20px;
     text-align: center;
-    margin-right: 15px;
-    margin-bottom: 30px;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 13px;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
-.courses-list .course-area {
+.course-area {
     display: flex;
     flex-direction: column;
     height: 100%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: #40004C;
-    padding: 30px;
+    padding: 20px;
 }
 
-.course-area .course-img {
+.course-img {
     background-color: #40004C;
-    width: 132px;
-    height: 132px;
+    width: 69%;
+    height: 69%;
     border: 3px solid black;
     border-radius: 66px;
     margin-bottom: 10px;
@@ -155,14 +156,14 @@ span {
 /*Who*/
 
 .who-for {
-    max-width: 1140px;
+    max-width: 75%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
-.who .who-left {
-    width: 580px;
+.who-left {
+    width: 63%;
     align-items: center;
     justify-content: left;
 }
@@ -173,6 +174,7 @@ span {
     font-weight: 900;
     margin-top: 60px;
     margin-bottom: 20px;
+    line-height: 1;
 }
 
 .who img {
@@ -180,9 +182,13 @@ span {
     margin-right: 20px;
 }
 
-.who-list .list-entry {
-    font-size: 18px;
-    margin: 10px 10px 30px 10px;
+.list-check {
+    margin: auto;
+}
+
+.list-entry {
+    font-size: 16px;
+    margin: 10px 10px 30px;
     display: flex;
 
 }
@@ -193,27 +199,29 @@ span {
 }
 
 .why-tho {
-    max-width: 1140px;
+    max-width: 75%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
 .why-left {
-    width: 580px;
+    width: 63%;
     align-items: center;
     justify-content: left;
+    margin-bottom: 20px;
 }
 
 .why-tit {
     color: #FF0078;
     font-weight: 900;
     font-size: 50px;
+    line-height: 1;
     margin-top: 70px;
     margin-bottom: 20px;
 }
 
-.why .why-desc {
+.why-desc {
     color:#666666;
     font-size: 16px;
     margin-bottom: 30px;
@@ -232,13 +240,13 @@ span {
     font-size: 50px;
     font-weight: 900;
     margin-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .modules h5 {
     text-transform: uppercase;
     font-size: 19px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .mode-tit {
@@ -247,18 +255,19 @@ span {
 }
 
 .modules-list {
-    max-width: 1140px;
+    max-width: 85%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.modules-list .modes {
+.modes {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
 }
 
 .mode-img {
@@ -268,30 +277,28 @@ span {
     border: 2px solid #40004C;
     border-radius: 30px;
     align-items: center;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto 10px;
 }
 
-.modules-list .mode {
-    width: 365px;
-    height: 209px;
+.mode {
+    width: 30%;
+    height: auto;
     display: inline-block;
     background-color: white;
     box-shadow: 0px 0px 7px rgb(53, 53, 53);
     border-radius: 20px;
     text-align: center;
-    margin-right: 15px;
-    margin-bottom: 25px;
+    margin: 10px;
     font-weight: 600;
     font-size: 13px;
 }
 
-.modules-list .mode-tit {
+.mode-tit {
     text-transform: uppercase;
+    font-size: 16px;
 }
 
-.modules-list .mode-desc {
+.mode-desc {
     color: #666666;
 }
 
@@ -310,7 +317,7 @@ span {
 
 .vids-tit {
     text-align: center;
-    margin-bottom: 60px;
+    margin: 10px auto 60px;
     padding-top: 5px;
 }
 
@@ -319,8 +326,7 @@ span {
     text-transform: uppercase;
     font-size: 50px;
     font-weight: 900;
-    margin-top: 45px;
-    margin-bottom: 20px;
+    margin:  45px auto 10px;
 }
 
 .vids-tit h5 {
@@ -329,14 +335,12 @@ span {
 }
 
 .videos-list {
-    max-width: 1140px;
+    max-width: 85%;
     align-items: center;
     margin: auto;
-    display: flex;
 }
 
 .videos {
-    width: 1000vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -344,14 +348,13 @@ span {
 }
 
 .video {
-    width: 360px;
-    height: 213px;
+    width: 270px;
+    height: 173px;
     background-color: #a8a8a8;
     border: 3px solid #40004C;
     border-radius: 20px;
     display: inline-flex;
-    margin-right: 20px;
-    margin-bottom: 40px;
+    margin: 10px auto 20px;
 }
 
 /*Price*/
@@ -362,7 +365,7 @@ span {
 }
 
 .price-desc {
-    max-width: 1140px;
+    max-width: 75%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -379,7 +382,7 @@ span {
 }
 
 .price-desc2 {
-    width: 868px;
+    width: 100%;
     font-size: 18px;
 }
 
@@ -397,7 +400,7 @@ span {
 }
 
 .price .main-butt {
-    width: 450px;
+    width: 55%;
     height: 69px;
     margin-bottom: 40px;
 }
@@ -416,28 +419,29 @@ span {
     align-items: center;
     text-align: start;
     margin-bottom: 40px;
+    width: 125%;
 }
 
 .warranty-desc {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
-    margin-left: 80px;
+    margin-left: 40px;
     flex: 1;
     width: 843px;
 }
 
 .warranty-medal {
-    width: 236px;
-    height: 236px;
+    width: 206px;
+    height: 206px;
     background-color: #F9FFFF;
-    border: 27px solid #FF0078;
+    border: 25px solid #FF0078;
     border-radius: 118px;
 }
 
 /*Bonus*/
 .bonus-bod {
     margin: auto;
-    max-width: 1140px;
+    max-width: 75%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -449,7 +453,7 @@ span {
     color: #FF0078;
     font-weight: 900;
     text-align: center;
-    width: 690px;
+    width: 100%;
     margin-top: 60px;
 }
 
@@ -457,10 +461,11 @@ span {
     background-color: white;
     box-shadow: 0px 0px 7px rgb(53, 53, 53);
     border-radius: 10px;
-    width: auto;
-    height: 242px;
+    width: 100%;
+    height: 232px;
     margin-top: 40px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
@@ -471,8 +476,8 @@ span {
     font-size: 18px;
 }
 
-.bonus-stuff {
-    flex: 1;
+.bonus-desc {
+    width: 80%;
 }
 
 .bonus-book-desc {
@@ -482,8 +487,9 @@ span {
 
 .book {
     background-color: #0087D2;
-    width: 141px;
-    height: 194px;
+    width: 19%;
+    height: 85%;
+    scale: 0.9;
 }
 
 .first .book {
@@ -496,9 +502,13 @@ span {
 
 /*Classes*/
 
+.classes {
+    margin: auto;
+}
+
 .classes-bod {
     margin: auto;
-    max-width: 1140px;
+    max-width: 75%;
     align-items: center;
     text-align: center;
     display: flex;
@@ -509,18 +519,22 @@ span {
     font-size: 40px;
     font-weight: 900;
     margin-top: 90px;
-    width: 800px;
+    width: 82%;
+    line-height: 1.2;
 }
 
 .classes-options {
     margin-top: 40px;
     display: flex;
+    justify-content: center;
+    width: 125%;
 }
 
 .class {
     width: 369px;
-    height: 208px;
-    margin-right: 25px;
+    height: auto;
+    margin: auto 10px;
+    scale: 0.94;
     box-shadow: 0px 0px 7px rgb(53, 53, 53);
     border-radius: 12px;
     padding: 5px;
@@ -534,6 +548,7 @@ span {
 
 .class-desc {
     font-weight: 500;
+    font-size: 15px;
 }
 
 .two .class-desc {
@@ -577,14 +592,14 @@ span {
 }
 
 .teach-bod {
-    max-width: 1140px;
+    max-width: 75%;
     margin: auto;
     display: flex;
     flex-direction: column;
 }
 
 .teach-stuff {
-    width: 580px;
+    width: 63%;
     margin-bottom: 90px;
 }
 
@@ -593,9 +608,9 @@ span {
     font-size: 55px;
     text-transform: uppercase;
     font-weight: 900;
-    width: 500px;
+    width: 100%;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     line-height: 0.9;
 }
 
@@ -614,7 +629,7 @@ span {
 
 /*FAQ*/
 .faq-bod {
-    max-width: 1140px;
+    max-width: 75%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -637,36 +652,53 @@ span {
     margin-bottom: 20px;
 }
 
-.faq-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 60px;
+.accordion-item {
+    border: none;
+    margin-bottom: 20px;
+    background-color: #FDFDFD;
 }
 
-.faq-ques {
-    width: 100%;
-    height: 60px;
-    padding: 10px 20px;
+.accordion-item:first-of-type .accordion-button.collapsed,
+.accordion-item:last-of-type .accordion-button.collapsed,
+.accordion-item .accordion-button.collapsed {
     background-color: #40004C;
     color: #FDFDFD;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    display: flex;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.accordion-item:first-of-type .accordion-button,
+.accordion-item:last-of-type .accordion-button,
+.accordion-item .accordion-button {
+    background-color: #40004C;
+    color: #FDFDFD;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    padding: 20px;
+    box-shadow: none;
+}
+
+.accordion-item:first-of-type .accordion-button:active,
+.accordion-item:last-of-type .accordion-button:active,
+.accordion-item .accordion-button:active {
+    border-color: #40004C;
+}
+
+.accordion-body {
+    background-color: #40004C;
+    color: #FDFDFD;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+
+.accordion-button.collapsed::after,
+.accordion-button::after {
+    background-color: #FDFDFD;
+    background-size: auto;
+    border-radius: 15px;
+    width: 25px;
+    height: 25px;
     align-items: center;
-}
-
-.faq-ques:hover {
-    background-color: #FF0078;
-    cursor: pointer;
-}
-
-.faq-arrow {
-    width: 5px;
-    height: 5px;
-    border: 5px solid;
-    border-color: transparent transparent transparent #FDFDFD;
-    margin-right: 5px;
 }
 
 
@@ -674,7 +706,7 @@ span {
 /*Footer*/
 .foot-bod {
     margin: auto;
-    max-width: 1140px;
+    max-width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -726,410 +758,293 @@ span {
 
 
 
-
-/*Responsiveness (TABLET)*/
-@media (min-width: 426px) and (max-width: 768px) {
-
-    .main-butt {
-        font-size: 18px;
-    }
-
+/*TABLET*/
+@media (max-width: 786px) {
     /*Intro*/
+    .start {
+        max-width: 85%;
+    }
+    
     .start .start-left {
-        width: 380px;
-        margin-left: 40px;
+        width: 52%;
     }
 
-    .start .videoarea {
-        width: 367px;
-        height: 196px;
-    }
-
-    .start .main-butt {
-        width: 367px;
-    }
 
 
     /*Techs*/
     .techs h1 {
-        font-size: 50px;
-        margin-bottom: 10px;
+        font-size: 37px;
     }
-    
+
     .techs h5 {
-        font-size: 18px;
-        margin-bottom: 40px;
-    }
-
-    .courses-list .course {
-        width: 168px;
-        height: 100%;
-        min-height: 206px;
-        display: inline-block;
-        text-align: center;
-        margin: 10px;
-        font-weight: 600;
         font-size: 16px;
+        margin-bottom: 50px;
     }
-    
-    .courses-list .course-area {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
+
+    .courses {
+        max-width: 95%;
     }
-    
-    .course-area .course-img {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 20px;
+
+    .course {
+        width: 21%;
+        margin: 2% 1%;
+    }
+
+    .course-area {
+        padding: 15.28% 5px;
+    }
+
+    .course-img {
+        width: 50%;
+        height: 50%;
     }
 
 
-    /*Why*/
-    .who .who-left {
-        width: 330px;
-        margin-left: 40px;
+
+    /*Who*/
+    .who-for {
+        max-width: 85%;
     }
-    
+
+    .who-left {
+        width: 52%;
+    }
+
     .who-tit {
-        font-size: 40px;
-        margin-top: 60px;
-        margin-bottom: 20px;
-        width: 300px;
-    }
-    
-    .who img {
-        width: 32px;
-        margin-right: 20px;
-    }
-    
-    .who-list .list-entry {
-        font-size: 16px;
-        margin: 10px 10px 30px 10px;
-        align-items: center;
+        font-size: 300%;
     }
 
-    .who .main-butt {
-        width: 330px;
-    }
 
 
     /*Why*/
+    .why-tho {
+        max-width: 85%;
+    }
+
     .why-left {
-        width: 360px;
-        margin-left: 40px;
+        width: 52%;
     }
-    
+
     .why-tit {
-        font-size: 45px;
-        width: 340px;
+        width: 100%;
+        font-size: 46px;
     }
-    
-    .why .why-desc {
-        font-size: 16px;
+
+    .why-desc {
+        font-size: 15px;
+        margin: 20px auto 40px;
     }
+
 
 
     /*Modules*/
-    .modules h1 {
-        font-size: 50px;
-        margin-top: 60px;
-        margin-bottom: 20px;
-    }
-    
     .modules h5 {
-        font-size: 15px;
-        margin-bottom: 30px;
+        font-size: 16px;
+        margin-bottom: 50px;
     }
-    
-    .mode-tit {
-        font-weight: 900;
-    }
-
-    .mode-img {
-        width: 61px;
-        height: 61px;
-    }
-
     .modules-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        max-width: 85%;
     }
 
-    .modes {
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .modes .mode {
-        width: 190px;
-        height: 230px;
-        align-items: center;
-        margin: 7px;
-        border-radius: 8px;
+    .mode {
+        width: 30%;
+        height: 250px;
+        padding: 10px;
     }
 
 
 
     /*Videos*/
     .vids {
-        height: 600px;
+        background-image: linear-gradient(to bottom, #FFEFF8, #FFEFF8, #BEBAC4);
     }
 
-    .videos-list {
-       display: flex;
-       justify-content: center;
-       align-items: center;
+    .vids-bod {
+        padding-bottom: 80px;
     }
-    
-    .videos {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-    
+
     .video {
-        width: 210px;
-        height: 125px;
-        display: inline-flex;
-        margin-right: 10px;
-        margin-bottom: 40px;
+        aspect-ratio: 2 / 1.3;
+        width: 30%;
+        height: 50%;
     }
+
 
 
     /*Price*/
-    
     .price-desc {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        max-width: 85%;
     }
-    
-    .price-desc1 {
-        width: 400px;
-        text-transform: uppercase;
-        font-size: 18px;
-        font-weight: 600;
-        margin-top: 80px;
-        margin-bottom: 20px;
+
+    .price-total h1 {
+        font-size: 85px;
     }
-    
-    .price-desc2 {
-        width: 690px;
-        font-size: 16px;
-    }
-    
-    .price .main-butt {
-        width: 360px;
-        height: 52px;
-        margin-bottom: 40px;
-    }
-    
+
     .price-warranty {
-        width: 630px;
+        width: 100%;
     }
-    
-    .warranty-desc {
-        font-size: 15px;
-        font-weight: 500;
-        margin-left: 40px;
-        flex: 1;
-        width: 843px;
-    }
-    
+
     .warranty-medal {
-        width: 136px;
-        height: 136px;
+        width: 18%;
+        height: 120px;
+        border-width: 17px;
+    }
+
+    .warranty-desc {
+        margin-left: 50px;
+        font-size: 15px;
     }
 
 
-    
+
     /*Bonus*/
+    .bonus-tit {
+        line-height: 1.1;
+        font-size: 25px;
+    }
+
+    .bonus-bod {
+        max-width: 85%;
+    }
+
     .bonus-book {
-        height: 160px;
-        margin: 30px;
+        height: 172px;
     }
-    
-    .bonus-book-tit {
-        font-size: 16px;
-    }
-    
+
     .bonus-book-desc {
-        width: 400px;
+        font-size: 14px;
     }
-    
+
     .book {
-        width: 101px;
-        height: 124px;
+        width: 18%;
     }
 
-    .second .book {
-        margin-left: 70px;
-    }
-
-    .third .book {
-        margin-left: 48px;
-    }
 
 
     /*Classes*/
-    .classes-tit {
-        width: 700px;
-        font-size: 28px;
-    }
-    
-    .class {
-        width: 220px;
-        height: 280px;
-        padding: 7px;
+    .classes-bod {
+        max-width: 85%;
     }
 
+    .classes-tit {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .classes-tit span {
+        font-size: 40px;
+    }
+
+    .classes-options {
+        width: 100%;
+        height: 100%;
+    }
+
+    .class {
+        width: 30%;
+        height: 250px;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    .class-desc {
+        font-size: 14px;
+        width: 100%;
+    }
+
+
+
     /*Teacher*/
+    .teach-bod {
+        max-width: 85%;
+    }
+
     .teach-stuff {
-        width: 400px;
-        margin-bottom: 90px;
-        margin-left: 40px;
+        width: 53%;
     }
-    
+
     .teach-tit {
-        width: 420px;
-        margin-bottom: 0;
+        font-size: 48px;
     }
-    
+
     .teach-name {
-        font-size: 55px;
-    
-    }
-    
-    .teach-desc {
-        font-size: 20px;
+        font-size: 48px;
+        text-align: center;
     }
 
 
 
     /*FAQ*/
-    .faq-list {
-        justify-content: center;
-        margin-bottom: 60px;
-        margin: 10px 40px 50px;
+    .faq-bod {
+        max-width: 85%;
     }
-    
-    .faq-ques {
-        font-size: 20px;
+
+    .faq-tit {
+        margin-bottom: 0;
     }
-    
+
 
 
     /*Footer*/
-    .foot-desc {
-        margin: 70px 40px 0;
-        text-align: center;
-        font-size: 17px;
-        line-height: 1.5;
+    .foot-bod {
+        max-width: 85%;
+    }
+
+    .copyright {
+        margin-bottom: 20px;
     }
 }
 
 
-/*Responsiveness (PHONE L)*/
-@media (min-width: 376px) and (max-width: 425px) {
-     /*Intro*/
-    .start {
-        align-items: center;
-        justify-content: center;
+
+
+/*MOBILE*/
+@media (max-width: 425px) {
+    /*Start*/
+    .start .start-left {
+        width: 100%;
     }
 
-     .start .start-left {
-        width: 340px;
-    }
-
-    .start h1 {
-        width: 340px;
-    }
-
-    .start .videoarea {
-        width: 340px;
-        height: 182px;
-    }
-
-    .start .main-butt {
-        width: 340px;
+    .start-left h1 {
+        font-size: 28px;
     }
 
 
 
     /*Techs*/
-
     .techs h1 {
-        font-size: 30px;
-        margin-bottom: 10px;
+        font-size: 28px;
+        width: 100%;
     }
 
     .techs h5 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
-    .courses-list {
-        margin-top: 30px;
-        margin-bottom: 30px;
+    .course {
+        width: 45%;
+        height: 227px;
+        margin: 3% 1%;
     }
 
-    .courses-list .course {
-        width: 180px;
-        height: auto;
-        display: inline-block;
-        justify-content: center;
-        text-align: center;
-        margin: 5px;
-        font-weight: 600;
-        font-size: 16px;
-    }
-
-    .course-area .course-img {
-        width: 100px;
-        height: 100px;
+    .course-img {
+        width: 69%;
+        height: 69%;
     }
 
 
 
     /*Who*/
-    .who .who-left {
-        width: 340px;
-        margin: auto;
+    .who-left {
+        width: 100%;
     }
-    
+
     .who-tit {
-        font-size: 30px;
-        margin-top: 60px;
-        margin-bottom: 20px;
-        width: 350px;
-        
-    }
-    
-    .who img {
-        width: 30px;
-        margin-right: 15px;
+        font-size: 210%;
     }
 
-    .who-list {
-        width: 360px;
-    }
-    
-    .who-list .list-entry {
-        font-size: 18px;
-        margin: 10px auto 30px;
-        align-items: center;
-    }
-
-    .who .main-butt {
-        width: 340px;
+    .list-entry {
+        font-size: 14px;
     }
 
 
@@ -1140,1025 +1055,424 @@ span {
     }
 
     .why-left {
-        width: 360px;
-        margin: auto;
+        width: 100%;
     }
-    
+
     .why-tit {
-        font-size: 37px;
-        width: 360px;
-    }
-    
-    .why .why-desc {
-        font-size: 17px;
-        margin-bottom: 50px;
+        font-size: 237%;
     }
 
 
 
     /*Modules*/
-    .modules {
-        width: 360px;
-        margin: auto;
-    }
-
-    .modules h1 {
-        font-size: 40px;
-        margin-top: 60px;
-        margin-bottom: 20px;
-    }
-
     .modules h5 {
-        font-size: 13px;
-        margin-bottom: 30px;
+        margin: 10px 3% 50px;
     }
 
-    .mode-tit {
-        font-weight: 700;
-        font-size: 20px;
+    .mode {
+        width: 100%;
+        height: auto;
     }
 
-    .mode-img {
-        width: 65px;
-        height: 65px;
-    }
-
-    .modules-list {
-        margin-left: 10px;
-    }
-
-    .modes .mode {
-        width: 360px;
-        height: 200px;
+    .mode-desc {
+        margin-bottom: 10px;
     }
 
     .modules .main-butt {
-        width: 360px;
+        width: 85%;
     }
 
 
 
     /*Videos*/
-    
     .vids-tit h1 {
         font-size: 40px;
-        margin-top: 45px;
+        margin-top: 25px;
+    }
+
+    .vids-tit h5 {
+        margin: 0 10px;
+    }
+
+    .video {
+        width: 100%;
+        aspect-ratio: 2 / 1.1;
+    }
+
+
+
+    /*Price*/
+    .price-desc1 {
+        width: 110%;
+        margin-top: 40px;
+    }
+
+    .price-desc2 {
+        font-size: 16px;
+    }
+
+    .price-total h5 {
+        font-size: 24px;
+    }
+
+    .price .main-butt {
+        width: 90%;
+    }
+
+    .price-limit {
+        margin-bottom: 45px;
+    }
+
+    .price-warranty {
+        flex-direction: column;
+    }
+
+    .warranty-medal {
+        aspect-ratio: 1 / 1;
+        width: 50%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .warranty-desc {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        font-size: 16px;
+    }
+
+
+
+    /*Bonus*/
+    .bonus-tit {
+        margin-top: 40px;
+        font-size: 26px;
+    }
+
+    .bonus-book {
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .book {
+        width: 60%;
+        height: 60%;
+        aspect-ratio: 1 / 1.3;
+    }
+
+    .bonus-desc {
+        width: 100%;
+        text-align: center;
         margin-bottom: 20px;
     }
-    
-    .vids-tit h5 {
+
+
+
+    /*Classes*/
+    .classes-tit {
+        font-size: 30px;
+    }
+
+    .classes-tit span {
+        font-size: 34px;
+    }
+
+    .classes-options {
+        flex-direction: column;
+    }
+
+    .class {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 0.6;
+    }
+
+    .classes .main-butt {
+        width: 90%;
+    }
+
+
+
+    /*Teacher*/
+    .teacher {
+        background-image: linear-gradient(to bottom, #FFEFF8, #FFEFF8, #BEBAC4);
+    }
+
+    .teach-stuff {
+        width: 100%;
+    }
+
+    .teach-tit {
+        text-align: center;
+        font-size: 44px;
+        margin-bottom: 15px;
+    }
+
+    .teach-name {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*FAQ*/
+    .faq-tit {
+        margin-top: 30px;
+    }
+
+
+
+    /*Footer*/
+    .foot .main-butt {
+        width: 90%;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+}
+
+
+
+
+/*PC*/
+@media (min-width: 1600px) {
+    /*Start*/
+    .start {
+        max-width: 80%;
+    }
+
+    .start-left {
+        width: 50%;
+    }
+
+    .start h1 {
+        font-size: 32px;
+    }
+
+    .videoarea {
+        margin: 30px;
+    }
+
+    .start .main-butt {
+        width: 92%;
+        margin-top: 0;
+    }
+
+
+
+    /*Techs*/
+    .techs h1 {
+        width: 50%;
+    }
+
+    .techs h5 {
+        margin-bottom: 50px;
+    }
+
+    .course {
+        width: 20%;
+        height: auto;
+        aspect-ratio: 1 / 0.9;
+        margin: 25px 15px;
+    }
+
+    .course-img {
+        aspect-ratio: 1 / 1;
+        width: 60%;
+        height: auto;
+        border-radius: 100%;
+
+    }
+
+    .course-area {
         font-size: 18px;
+    }
+
+
+
+    /*Who*/
+    .who-for {
+        max-width: 80%;
+    }
+
+    .who-left {
+        width: 50%;
+    }
+
+    .list-entry {
+        font-size: 20px;
+    }
+
+    .list-check {
+        margin: auto 0;
+    }
+
+
+
+    /*Why*/
+    .why-tho {
+        max-width: 80%;
+    }
+
+    .why-left {
+        width: 50%;
+    }
+
+    .why-tit {
+        font-size: 55px;
+    }
+
+    .why-desc {
+        font-size: 17px;
+    }
+
+
+    
+    /*Modules*/
+    .modules h5 {
+        margin-bottom: 0;
+    }
+
+    .modules-list {
+        max-width: 80%;
+    }
+
+    .mode {
+        aspect-ratio: 1 / 0.6;
+        margin-top: 50px;
+    }
+
+    .mode-img {
+        width: 20%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        border-radius: 100%;
+    }
+
+    .mode-tit {
+        font-size: 20px;
+    }
+
+    .mode-desc {
+        font-size: 17px;
+    }
+
+
+
+    /*Videos*/
+    .vids-bod {
+        padding-bottom: 80px;
     }
 
     .videos-list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-     }
-     
-     .videos {
-        margin-left: 15px;
-     }
+        max-width: 80%;
+    }
 
-     .video {
-        margin-bottom: 20px;
-     }
+    .video {
+        width: 32%;
+        height: auto;
+        aspect-ratio: 1 / 0.56;
+        margin-bottom: 50px;
+    }
 
 
 
-     /*Price*/
-     .price-desc {
-        margin: auto;
-        width: 360px;
+    /*Price*/
+    .price-desc {
+        max-width: 60%;
     }
-    
-    .price-desc1 {
-        font-size: 19px;
-        font-weight: 600;
-        margin-top: 40px;
-        margin-bottom: 20px;
-    }
-    
-    .price-desc2 {
-        width: 360px;
-        font-size: 18px;
-    }
-    
-    .price .main-butt {
-        width: 350px;
-        height: 62px;
-    }
-    
+
     .price-warranty {
-        width: 360px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .warranty-desc {
-        font-size: 18px;
-        width: 360px;
-        margin: auto;
-    }
-    
-    .warranty-medal {
-        width: 136px;
-        height: 136px;
-        margin-bottom: 25px;
+        width: 100%;
     }
 
 
 
     /*Bonus*/
     .bonus-bod {
-        width: 360px;
+        max-width: 80%;
     }
 
     .bonus-tit {
-        width: 360px;
-        font-size: 24px;
-    }
-
-    .bonus-list {
-        width: 360px;
+        width: 55%;
     }
 
     .bonus-book {
         height: auto;
-        width: 360px;
-        flex-direction: column-reverse;
         padding: 10px;
     }
-    
-    .bonus-book-tit {
-        font-size: 16px;
-        margin: auto;
-        text-align: center;
-    }
-    
-    .bonus-book-desc {
-        width: 350px;
-        margin: 10px auto;
-        text-align: center;
-    }
-    
+
     .book {
-        width: 101px;
-        height: 124px;
-        margin-bottom: 10px;
+        width: 14%;
+        height: auto;
+        aspect-ratio: 1 / 1.4;
     }
 
-
+    
 
     /*Classes*/
-    .classes {
-        margin: auto;
-        align-items: center;
-        text-align: center;
+    .classes-bod {
+        max-width: 80%;
     }
 
-    .classes-tit {
-        width: 300px;
-        font-size: 24px;
-        margin-top: 30px;
-        line-height: 1;
-        margin-bottom: 20px;
+    .classes-tit{
+        width: 60%;
+        font-size: 36px;
     }
 
     .classes-tit span {
-        font-size: 30px;
+        font-size: 45px;
     }
 
     .classes-options {
-        flex-direction: column;
-        width: 360px;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
+        max-width: 100%;
     }
-    
+
     .class {
-        width: 360px;
-        height: auto;
-        padding: 10px;
-        margin: auto auto 20px;
+        aspect-ratio: 1 / 0.6;
+        margin: 10px;
+        justify-content: space-around;
     }
 
-    .class-desc {
-        margin-bottom: 20px;
-    }
-
-    .class .main-butt {
-        width: 360px;
-        margin: auto;
+    .classes .main-butt {
+        width: 27%;
     }
 
 
 
     /*Teacher*/
-    .teacher {
-        background-image: linear-gradient(to bottom, #FFEFF8, #FFEFF8, #BEBAC4);
+    .teach-bod {
+        max-width: 80%;
     }
 
     .teach-stuff {
-        width: 360px;
-        margin: auto;
-        margin-bottom: 90px;
+        width: 50%;
     }
-    
-    .teach-tit {
-        width: 360px;
-        font-size: 40px;
-        text-align: center;
+
+    .teach-desc {
+        font-size: 18px;
+    }
+
+
+
+    /*FAQ*/
+    .faq-bod {
+        max-width: 80%;
+    }
+
+    .faq-tit {
         margin-bottom: 0;
     }
-    
-    .teach-name {
-        font-size: 40px;
-        text-align: center;
-    
-    }
-    
-    .teach-desc {
-        font-size: 22px;
-    }
-
-
-
-    /*FAQ*/
-    .faq-tit {
-        font-size: 45px;
-        margin: 10px auto 10px;
-    }
-
-    .faq-list {
-        width: 360px;
-        margin: 10px auto 50px;
-    }
-    
-    .faq-ques {
-        font-size: 18px;
-    }
 
 
 
     /*Footer*/
     .foot-desc {
-        width: 370px;
-        margin: 30px auto 0;
-        text-align: center;
         font-size: 20px;
-        line-height: 1.5;
-    }
-
-    .foot-bod .main-butt {
-        width: 360px;
-        height: 70px;
     }
 
     .copyright {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-}
-
-
-
-/*Responsiveness (PHONE M)*/
-@media (min-width: 321px) and (max-width: 375px) {
-    /*Intro*/
-    .start .start-left {
-        width: 375px;
-        padding: 0 5px;
-    }
-
-    .start-left h1 {
-        font-size: 30px;
-    }
-
-    .start-left .videoarea {
-        width: 330px;
-        height: 186px;
-        margin: 30px auto;
-    }
-
-    .start-left .main-butt {
-        width: 330px;
-        font-size: 17px;
-    }
-
-
-
-    /*Techs*/
-    .techs h1 {
-        font-size: 25px;
-        margin-bottom: 14px;
-    }
-
-    .techs h5 {
         margin-bottom: 20px;
-        margin-left: 13px;
-        width: 350px;
-        text-align: center;
-
-    }
-
-    .courses-list .courses {
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .courses-list .course {
-        width: 136px;
-        min-height: 180px;
-        margin: 10px;
-    }
-
-    .courses-list .course-area {
-        padding: 0;
-        font-size: 11px;
-    }
-
-    .course-area .course-img {
-        width: 90px;
-        height: 90px;
-    }
-
-
-
-    /*Who*/
-    .who .who-left {
-        width: 375px;
-    }
-
-    .who-tit {
-        width: 295px;
-        font-size: 30px;
-        margin-left: 20px;
-    }
-
-    .who-list {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .who-list .list-entry {
-        font-size: 16px;
-    }
-
-    .list-check {
-        margin: auto;
-    }
-
-    .who .main-butt {
-        width: 330px;
-        margin-left: 20px;
-        font-size: 16px;
-    }
-
-
-
-    /*Why*/
-    .why {
-        background-image: linear-gradient(to bottom, #FFEFF8, #FFEFF8, #BEBAC4);
-    }
-
-    .why-left {
-        width: 340px;
-        margin: 20px;
-    }
-
-    .why-tit {
-        font-size: 33px;
-        margin-top: 0;
-    }
-
-    .why .why-desc {
-        font-size: 14px;
-    }
-
-
-
-    /*Modules*/
-
-    .modules h1 {
-        margin-top: 20px;
-        margin-bottom: 5px;
-        font-size: 40px;
-    }
-
-    .modules h5 {
-        font-size: 14px;
-        width: 330px;
-        margin-left: 20px;
-        margin-bottom: 30px;
-    }
-
-    .modules-list .modes {
-        margin: auto;
-    }
-
-    .modules-list .mode {
-        width: 330px;
-        height: 186px;
-        margin: 0 auto 30px;
-    }
-
-    .mode-img {
-        margin: 10px auto;
-    }
-
-    .mode-tit {
-        font-size: 17px;
-    }
-
-    .modules .main-butt {
-        width: 330px;
-        font-size: 17px;
-        margin-bottom: 10px;
-    }
-
-
-
-    /*Videos*/
-    .vids-tit {
-        margin-bottom: 30px;
-    }
-
-    .vids-tit h1 {
-        font-size: 35px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .vids-tit h5 {
-        font-size: 16px;
-    }
-
-    .videos {
-        margin: auto;
-        margin-bottom: 30px;
-    }
-
-    .video {
-        width: 330px;
-        height: 186px;
-        margin: 15px 5px;
-    }
-
-
-
-    /*Prices*/
-    .price-desc1 {
-        width: 375px;
-        margin: 30px auto 15px;
-        font-size: 17px;
-    }
-
-    .price-desc2 {
-        width: 340px;
-        font-size: 16px;
-    }
-
-    .price-total h1 {
-        font-size: 80px;
-    }
-
-    .price-total h5 {
-        font-size: 25px;
-    }
-
-    .price .main-butt {
-        width: 290px;
-        height: 65px;
-        font-size: 16px;
-    }
-
-    .price-limit {
-        margin-bottom: 40px;
-    }
-
-    .price-warranty {
-        width: 330px;
-        flex-direction: column;
-    }
-
-    .warranty-medal {
-        margin-bottom: 30px;
-        width: 196px;
-        height: 196px;
-    }
-
-    .warranty-desc {
-        width: 330px;
-        margin: auto;
-        text-align: center;
-    }
-
-
-
-    /*Bonus*/
-    .bonus-tit {
-        width: 330px;
-        margin-top: 30px;
-        font-size: 25px;
-    }
-
-    .bonus-book {
-        flex-direction: column-reverse;
-        height: auto;
-        width: 330px;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .book {
-        margin: 20px auto;
-    }
-
-
-
-    /*Classes*/
-    .classes-tit {
-        width: 330px;
-        font-size: 25px;
-        margin-top: 50px;
-    }
-
-    .classes-tit span {
-        font-size: 35px;
-    }
-
-    .classes-options {
-        flex-direction: column;
-        margin: 40px auto 0;
-    }
-
-    .class {
-        width: 330px;
-        height: 196px;
-        margin: 10px auto;
-    }
-
-    .class-desc {
-        font-size: 14px;
-    }
-
-    .classes .main-butt {
-        width: 330px;
-        font-size: 16px;
-    }
-
-
-
-    /*Teacher*/
-    .teacher {
-        margin: auto;
-        align-items: center;
-    }
-
-    .teach-tit {
-        width: 375px;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 5px;
-    }
-
-    .teach-name {
-        font-size: 40px;
-        width: 375px;
-        text-align: center;
-    }
-
-    .teach-stuff {
-        width: 375px;
-    }
-
-    .teach-desc {
-        width: 330px;
-        font-size: 15px;
-        margin: auto;
-    }
-
-
-
-    /*FAQ*/
-    .faq-tit {
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-
-    .faq-list {
-        margin: auto;
-    }
-
-    .faq-ques {
-        width: 330px;
-    }
-
-
-
-    /*Footer*/
-    .foot-desc {
-        width: 330px;
-        margin-top: 40px;
-    }
-
-    .foot .main-butt {
-        width: 330px;
-    }
-
-    .copyright {
-        width: 330px;
-        font-size: 12px;
-        text-align: center;
-        margin: 30px auto;
-    }
-}
-
-
-
-/*Responsiveness (PHONE S)*/
-@media (max-width: 320px) {
-    /*Intro*/
-    .start-left {
-        width: 320px;
-        margin: auto;
-        align-items: center;
-        
-    }
-
-    .start h1 {
-        width: 320px;
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-
-    .start .videoarea {
-        width: 270px;
-        height: 152px;
-        margin: auto;
-    }
-
-    .main-butt {
-        width: 280px;
-    }
-
-
-
-    /*Techs*/
-    .techs h1 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-
-    .techs h5 {
-        font-size: 13px;
-    }
-
-    .courses-list .courses {
-        display: inline-flex;
-        flex-wrap: wrap;
-    }
-
-    .courses-list .course {
-        width: 146px;
-        min-height: 199px;
-        margin: 10px auto;
-    }
-
-    .course-area .course-img {
-        width: 90px;
-        height: 90px;
-    }
-
-    .courses-list .course-area {
-        padding: 0;
-        font-size: 14px;
-    }
-
-
-
-    /*Who*/
-
-    .who .who-left {
-        width: 320px;
-        margin: auto;
-        align-items: center;
-    }
-
-    .who-tit {
-        width: 260px;
-        font-size: 28px;
-        margin-left: 20px;
-        margin-top: 30px;
-    }
-
-    .who-list .list-entry {
-        font-size: 14px;
-    }
-
-    .list-check {
-        margin: auto;
-    }
-
-    .who img {
-        margin-right: 10px;
-    }
-
-    .who .main-butt {
-        margin-left: 30px;
-        margin-top: 0;
-        font-size: 16px;
-        width: 260px;
-        height: 50px;
-    }
-
-
-
-    /*Why*/
-    .why {
-        background-image: linear-gradient(to bottom, #FFEFF8, #FFEFF8, #BEBAC4);
-    }
-
-    .why-left {
-        width: 320px;
-        margin: auto;
-    }
-
-    .why-tit {
-        width: 300px;
-        font-size: 30px;
-        margin-left: 10px;
-        margin-top: 20px;
-    }
-
-    .why .why-desc {
-        font-size: 14px;
-        margin: 25px 15px 50px;
-    }
-
-
-
-    /*Modules*/
-    .modules h1 {
-        margin-top: 18px;
-        margin-bottom: 10px;
-        font-size: 35px;
-    }
-
-    .modules h5 {
-        font-size: 14px;
-    }
-
-    .modules-list .modes {
-        margin: auto;
-    }
-
-    .modules-list .mode {
-        width: 290px;
-        height: 177px;
-        margin: 0 auto 20px;
-    }
-
-    .modules-list .mode-tit {
-        font-size: 17px;
-    }
-
-    .modules-list .mode-desc {
-        font-size: 12px;
-        margin: auto;
-    }
-
-    .modules .main-butt {
-        width: 290px;
-        font-size: 14px;
-    }
-
-
-
-    /*Videos*/
-    .vids-tit {
-        margin-bottom: 40px;
-    }
-
-    .vids-tit h1 {
-        width: 320px;
-        font-size: 35px;
-        margin-top: 15px;
-    }
-
-    .vids-tit h5 {
-        font-size: 16px;
-        margin: 5px 10px;
-    }
-
-    .videos {
-        width: 320px;
-        margin: auto auto 30px;
-    }
-
-    .video {
-        width: 290px;
-        height: 177px;
-        margin: 10px auto;
-    }
-
-
-
-    /*Price*/
-    .price-desc {
-        margin: auto;
-    }
-
-    .price-desc1 {
-        width: 320px;
-        margin-top: 30px;
-        font-size: 15px;
-    }
-
-    .price-desc2 {
-        width: 290px;
-        font-size: 14px;
-    }
-
-    .price-total h1 {
-        font-size: 80px;
-    }
-
-    .price-total h5 {
-        font-size: 22px;
-    }
-
-    .price .main-butt {
-        width: 290px;
-        font-size: 18px;
-    }
-
-    .price-limit {
-        font-size: 16px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .price-warranty {
-        flex-direction: column;
-        width: 290px;
-    }
-
-    .warranty-medal {
-        width: 210px;
-        height: 210px;
-    }
-
-    .warranty-desc {
-        width: 290px;
-        margin: auto;
-        margin-top: 20px;
-        font-size: 14px;
-        text-align: center;
-    }
-
-
-
-    /*Bonus*/
-    .bonus-tit {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        width: 320px;
-        font-size: 22px;
-    }
-
-    .bonus-list {
-        width: 320px;
-        margin: auto;
-    }
-
-    .bonus-book {
-        flex-direction: column-reverse;
-        width: auto;
-        height: auto;
-        padding: 20px;
-        margin: 0 20px 30px;
-        text-align: center;
-    }
-
-    .bonus-book-desc {
-        font-size: 14px;
-    }
-
-    .book {
-        margin-bottom: 20px;
-    }
-
-
-
-    /*Classes*/
-    .classes-tit {
-        width: 320px;
-        font-size: 20px;
-        margin-top: 30px;
-        margin-bottom: 5px;
-    }
-
-    .classes-tit span {
-        font-size: 32px;
-    }
-
-    .classes-options {
-        flex-direction: column;
-        width: 320px;
-    }
-
-    .class {
-        width: 290px;
-        height: 177px;
-        margin: auto auto 25px;
-    }
-
-    .class-logo {
-        margin: 10px auto;
-    }
-
-    .class-desc {
-        font-size: 14px;
-        margin: 5px;
-    }
-
-    .classes .main-butt {
-        width: 290px;
-        font-size: 14px;
-    }
-
-
-
-    /*Teacher*/
-    .teach-stuff {
-        width: 320px;
-    }
-
-    .teach-tit {
-        width: 320px;
-        font-size: 30px;
-        text-align: center;
-        margin: 30px auto 10px;
-    }
-
-    .teach-name {
-        width: 320px;
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .teach-desc {
-        width: 290px;
-        margin: 10px auto;
-        font-size: 14px;
-    }
-
-
-
-    /*FAQ*/ 
-    .faq-tit {
-        margin: 10px auto;
-        font-size: 50px;
-    }
-
-    .faq-desc {
-        font-size: 16px;
-    }
-
-    .faq-list {
-        margin: auto;
-    }
-
-    .faq-ques {
-        width: 290px;
-        font-size: 14px;
-    }
-
-
-
-    /*Footer*/
-    .foot-desc {
-        font-size: 16px;
-        margin: 20px auto;
-        width: 290px;
-    }
-
-    .foot .main-butt {
-        width: 290px;
-        margin: 20px auto 40px;
-        font-size: 14px;
-    }
-
-    .copyright {
-        font-size: 12px;
-        text-align: center;
-        width: 290px;
-        margin: 50px auto 5px;
     }
 }

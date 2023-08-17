@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
     <section class="intro dark">
         <div class="start">
             <div class="start-left">
@@ -27,7 +32,7 @@
             <h1>Técnicas que você aprendará no curso</h1>
             <h5>Veja um pouco do que você vai aprender</h5>
         </div>
-
+        
         <div class="courses-list">
             <div class="courses">
                 <div class="course">
@@ -204,19 +209,21 @@
     </section>
 
     <section class="vids">
-        <div class="vids-tit">
-            <h1>Depoimentos</h1>
-            <h5>Veja Alguns Depoimentos Das Nossas Alunas</h5>
-        </div>
+        <div class="vids-bod">
+            <div class="vids-tit">
+                <h1>Depoimentos</h1>
+                <h5>Veja Alguns Depoimentos Das Nossas Alunas</h5>
+            </div>
 
-        <div class="videos-list">
-            <div class="videos">
-                <div class="video"></div>
-                <div class="video"></div>
-                <div class="video"></div>
-                <div class="video"></div>
-                <div class="video"></div>
-                <div class="video"></div>
+            <div class="videos-list">
+                <div class="videos">
+                    <div class="video"></div>
+                    <div class="video"></div>
+                    <div class="video"></div>
+                    <div class="video"></div>
+                    <div class="video"></div>
+                    <div class="video"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -249,10 +256,10 @@
 
     <section class="bonus light">
         <div class="bonus-bod">
-            <div class="bonus-tit">E tem ainda mais! Olha só o que você vai levar completamente grátis.</div>
+            <div class="bonus-tit">E ainda tem mais! Olha só o que você vai levar completamente grátis.</div>
             <div class="bonus-list">
                 <div class="bonus-book first">
-                    <div class="bonus-stuff">
+                    <div class="bonus-desc">
                         <div class="bonus-book-tit">Bônus 1 - Como abrir um CNPJ MEI</div>
                         <div class="bonus-book-desc">Donec consequat lorem quis maximus fermentum. Aliquam ornare, est eget lacinia ullamcorper, diam lorem malesuada leo, non tristique libero nulla nec lacus.</div>
                     </div>
@@ -261,8 +268,8 @@
 
                 <div class="bonus-book second">
                     <div class="bonus-desc">
-                        <div class="bonus-book-tit">Bônus 2 - Grupo VIP no Telegram</div>
-                        <div class="bonus-book-desc">Sed eget velit ac erat consequat suscipit id sed enim. Etiam congue massa at lorem maximus, ac commodo nunc varius.</div>
+                            <div class="bonus-book-tit">Bônus 2 - Grupo VIP no Telegram</div>
+                            <div class="bonus-book-desc">Sed eget velit ac erat consequat suscipit id sed enim. Etiam congue massa at lorem maximus, ac commodo nunc varius.</div>
                     </div>
                     <div class="book"></div>
                 </div>
@@ -325,12 +332,72 @@
         <div class="faq-bod">
             <div class="faq-tit">FAQ</div>
             <div class="faq-desc">Perguntas frequentes</div>
-            <div class="faq-list">
-                <div class="faq-ques"><div class="faq-arrow"></div>O acesso ao curso é vitálico?</div>
-                <div class="faq-ques"><div class="faq-arrow"></div>Dá para parcelar no boleto?</div>
-                <div class="faq-ques"><div class="faq-arrow"></div>E se eu tiver dúvidas? Tem suporte?</div>
-                <div class="faq-ques"><div class="faq-arrow"></div>E se por algum motivo eu não gostar do curso?</div>
-                <div class="faq-ques"><div class="faq-arrow"></div>O curso terá certificado?</div>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      O acesso ao curso é vitálico?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Phasellus maximus dictum facilisis. Morbi a malesuada velit. In eget vulputate diam. Duis in lobortis quam, ac finibus risus. Praesent euismod elit ut lacinia sagittis. Nulla at dapibus sapien. Fusce vulputate vel orci a laoreet.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Dá para parcelar no boleto?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Nulla facilisi. Vestibulum sem massa, ultrices nec mi in, laoreet hendrerit sapien. Nulla mauris felis, condimentum et fringilla vel, rhoncus vel ante. Pellentesque ultricies auctor malesuada. Phasellus ac mollis mi.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      E se eu tiver dúvidas? Tem suporte?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Maecenas ut semper magna. Suspendisse pharetra, risus nec mollis varius, ligula mi malesuada purus, eget auctor nibh arcu laoreet arcu. Mauris ex nunc, fringilla sed lectus id, efficitur pulvinar nisi.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            E se por algum motivo eu não gostar do curso?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Sed tincidunt felis non tortor condimentum, at suscipit felis pellentesque. Cras vel commodo dolor. Duis eget lectus et tortor pulvinar lacinia at ac purus. Phasellus imperdiet justo vitae nisl laoreet sodales.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            O curso terá certificado?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Sed in odio sit amet leo pretium egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras vehicula nisl ut faucibus sagittis. Sed dapibus consequat commodo. Cras eu mi fermentum, ultrices velit id, posuere dui.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
