@@ -759,7 +759,7 @@ span {
 
 
 /*TABLET*/
-@media (max-width: 786px) {
+@media screen and (max-width: 786px) {
     /*Intro*/
     .start {
         max-width: 85%;
@@ -795,8 +795,9 @@ span {
     }
 
     .course-img {
-        width: 50%;
-        height: 50%;
+        width: 60%;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 
 
@@ -999,7 +1000,7 @@ span {
 
 
 /*MOBILE*/
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
     /*Start*/
     .start .start-left {
         width: 100%;
@@ -1235,244 +1236,3 @@ span {
 
 
 
-/*PC*/
-@media (min-width: 1600px) {
-    /*Start*/
-    .start {
-        max-width: 80%;
-    }
-
-    .start-left {
-        width: 50%;
-    }
-
-    .start h1 {
-        font-size: 32px;
-    }
-
-    .videoarea {
-        margin: 30px;
-    }
-
-    .start .main-butt {
-        width: 92%;
-        margin-top: 0;
-    }
-
-
-
-    /*Techs*/
-    .techs h1 {
-        width: 50%;
-    }
-
-    .techs h5 {
-        margin-bottom: 50px;
-    }
-
-    .course {
-        width: 20%;
-        height: auto;
-        aspect-ratio: 1 / 0.9;
-        margin: 25px 15px;
-    }
-
-    .course-img {
-        aspect-ratio: 1 / 1;
-        width: 60%;
-        height: auto;
-        border-radius: 100%;
-
-    }
-
-    .course-area {
-        font-size: 18px;
-    }
-
-
-
-    /*Who*/
-    .who-for {
-        max-width: 80%;
-    }
-
-    .who-left {
-        width: 50%;
-    }
-
-    .list-entry {
-        font-size: 20px;
-    }
-
-    .list-check {
-        margin: auto 0;
-    }
-
-
-
-    /*Why*/
-    .why-tho {
-        max-width: 80%;
-    }
-
-    .why-left {
-        width: 50%;
-    }
-
-    .why-tit {
-        font-size: 55px;
-    }
-
-    .why-desc {
-        font-size: 17px;
-    }
-
-
-    
-    /*Modules*/
-    .modules h5 {
-        margin-bottom: 0;
-    }
-
-    .modules-list {
-        max-width: 80%;
-    }
-
-    .mode {
-        aspect-ratio: 1 / 0.6;
-        margin-top: 50px;
-    }
-
-    .mode-img {
-        width: 20%;
-        height: auto;
-        aspect-ratio: 1 / 1;
-        border-radius: 100%;
-    }
-
-    .mode-tit {
-        font-size: 20px;
-    }
-
-    .mode-desc {
-        font-size: 17px;
-    }
-
-
-
-    /*Videos*/
-    .vids-bod {
-        padding-bottom: 80px;
-    }
-
-    .videos-list {
-        max-width: 80%;
-    }
-
-    .video {
-        width: 32%;
-        height: auto;
-        aspect-ratio: 1 / 0.56;
-        margin-bottom: 50px;
-    }
-
-
-
-    /*Price*/
-    .price-desc {
-        max-width: 60%;
-    }
-
-    .price-warranty {
-        width: 100%;
-    }
-
-
-
-    /*Bonus*/
-    .bonus-bod {
-        max-width: 80%;
-    }
-
-    .bonus-tit {
-        width: 55%;
-    }
-
-    .bonus-book {
-        height: auto;
-        padding: 10px;
-    }
-
-    .book {
-        width: 14%;
-        height: auto;
-        aspect-ratio: 1 / 1.4;
-    }
-
-    
-
-    /*Classes*/
-    .classes-bod {
-        max-width: 80%;
-    }
-
-    .classes-tit{
-        width: 60%;
-        font-size: 36px;
-    }
-
-    .classes-tit span {
-        font-size: 45px;
-    }
-
-    .classes-options {
-        max-width: 100%;
-    }
-
-    .class {
-        aspect-ratio: 1 / 0.6;
-        margin: 10px;
-        justify-content: space-around;
-    }
-
-    .classes .main-butt {
-        width: 27%;
-    }
-
-
-
-    /*Teacher*/
-    .teach-bod {
-        max-width: 80%;
-    }
-
-    .teach-stuff {
-        width: 50%;
-    }
-
-    .teach-desc {
-        font-size: 18px;
-    }
-
-
-
-    /*FAQ*/
-    .faq-bod {
-        max-width: 80%;
-    }
-
-    .faq-tit {
-        margin-bottom: 0;
-    }
-
-
-
-    /*Footer*/
-    .foot-desc {
-        font-size: 20px;
-    }
-
-    .copyright {
-        margin-bottom: 20px;
-    }
-}
